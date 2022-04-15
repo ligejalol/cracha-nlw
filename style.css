@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 html,
 body {
@@ -15,22 +16,41 @@ body {
 body {
   display: grid;
   place-items: center;
+  background: rgb(0, 0, 0) url(./img/background-dektop.svg) no-repeat center/cover;
 }
 main{
-  background: url(./img/background.svg);
-  width: 375px;
-  height: 812px;
+  background: rgb(0, 0, 0) url(./img/background.svg) no-repeat center/cover;
+  width: 358px;
+  height: 540px;
+}
+#faixa{
+  width: 64px;
+  position: absolute;
+  height: 50vh;
+  margin: 0 auto;
+  bottom: 5px;
+  left: 8px;
+  background: linear-gradient(161.24deg, #FF008E -15.25%, #FFCD1E 111.89%);
+
+}
+#quebra{
+  width: 80px;
+  background: #121214;
+  height: 8px;
+  margin: 6px auto 48px;
+  position: relative;
 }
 .container{
-  max-width: 250px;
   margin: 0 auto;
   text-align: center;
   color: var(--gray);
+  /* background: rgb(0, 0, 0) url(./img/background.svg) no-repeat center/cover; */
+
   /* border: 1px solid red; */
 }
 .avatar{
   width: 10rem;
-  margin: 11.5rem auto 0;
+  margin: 4.5rem auto 0;
   position: relative;
 }
 .avatar span{
@@ -68,7 +88,7 @@ p{
   margin-top: 2rem;
 }
 ul{
-  margin-top: 4rem;
+  margin-top: 2.5rem;
 
   list-style: none;
   
@@ -77,3 +97,82 @@ ul{
 
   justify-content: center;
 }
+
+@media (max-width: 400px) {
+  #quebra{
+    width: 0;
+    height: 0;
+  }
+#faixa{
+  width: 0;
+}
+  main{
+    background: rgb(0, 0, 0) url(./img/background.svg) no-repeat center/cover;
+    width: 100vw;
+    min-height: 812px;
+    height: 100vh;
+  }
+  .container{
+    max-width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--gray);
+  }
+  .avatar{
+    width: 10rem;
+    margin: 11.5rem auto 0;
+    position: relative;
+  }
+  .avatar span{
+    position: absolute;
+    top: -15px;
+    /* left: -15px; */
+    z-index: 1;
+  }
+  .avatar > img{ 
+    width: 10rem;
+    height: 11.5rem;
+    object-fit: cover;
+  
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);;
+  }
+  h1 {
+    font-size: 1.5rem;
+  
+    margin-top: 1.5rem;
+  }
+  
+  a {
+    color: var(--gray);
+    text-decoration: none;
+    
+    margin-top: 0.25rem;
+  
+    display: flex;
+    gap: 0.75rem;
+  
+    justify-content: center;
+    align-items: center;
+  }
+  p{
+    margin-top: 2rem;
+  }
+  ul{
+    margin-top: 4rem;
+  
+    list-style: none;
+    
+    display: flex;
+    gap: 0.5rem;
+  
+    justify-content: center;
+  }
+  
+}
+
+/* @media (min-width: 720px) {
+  /* Estilos versão talet 
+}
+@media (min-width: 960px) {
+  /* Estilos versão desktop 
+} */
