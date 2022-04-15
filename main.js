@@ -3,7 +3,7 @@ const linksSocialMedia = {
   youtube: 'valneyFilho',
   twitter: 'valneyfx',
   instagram: 'valneyssf',
-  facebook: 'maykbrito'
+  facebook: 'valney.dasilva.9'
 }
 function changeSocialMediaLinks() {
   for (let li of socialLinks.children) {
