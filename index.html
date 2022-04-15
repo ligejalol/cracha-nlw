@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+    <title>Valney Filho - DoWhile 2021</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="avatar">
+          <span>
+            <img src="./img/build.svg" alt="Selo Rocketseat" />
+          </span>
+          <img
+            id="userImage"
+            src="http://lorempixel.com.br/185/185/people/"
+            alt="Foto Pessoal"
+          />
+        </div>
+
+        <h1 id="userName">Valney Filho</h1>
+        <a id="userLink" href="" target="_blank">
+          <img src="./img/github.svg" alt="Logo do Github" />
+          <span id="userLogin"> Valneyfx </span>
+        </a>
+        <p id="userBio">I am student</p>
+        <ul id="socialLinks">
+          <li class="youtube">
+            <a href="youtube" target="_blank">
+              <img src="./img/youtube.svg" alt="Icone youtube" />
+            </a>
+          </li>
+          <li class="instagram">
+            <a href="instagram" target="_blank">
+              <img src="./img/instagram.svg" alt="Icone instagram " />
+            </a>
+          </li>
+          <li class="twitter">
+            <a href="twitter" target="_blank">
+              <img src="./img/twitter.svg" alt="Icone twitter " />
+            </a>
+          </li>
+          <li class="facebook">
+            <a href="facebook" target="_blank">
+              <img src="./img/facebook.svg" alt="Icone facebook" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <script src="main.js"></script>
+    <!-- <script>
+      const linksSocialMedia = {
+        github: 'ValneySantos',
+        youtube: 'valneyFilho',
+        twitter: 'valneyfx',
+        instagram: 'valneyssf',
+        facebook: 'maykbrito'
+      }
+      function changeSocialMediaLinks() {
+        for (let li of socialLinks.children) {
+          const social = li.getAttribute('class')
+
+          li.children[0].href = `https://www.${social}.com/${linksSocialMedia[social]}`
+        }
+      }
+      changeSocialMediaLinks()
+    </script> -->
+  </body>
+</html>
