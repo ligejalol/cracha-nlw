@@ -1,6 +1,6 @@
 const linksSocialMedia = {
   github: 'ValneySantos',
-  youtube: 'valneyFilho',
+  youtube: '',
   twitter: 'valneyfx',
   instagram: 'valneyssf',
   facebook: 'valney.dasilva.9'
